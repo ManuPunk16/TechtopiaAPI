@@ -2,7 +2,7 @@
   "version": 2,
   "functions": {
     "api/**/*.ts": {
-      "runtime": "@vercel/node@3",
+      "runtime": "@vercel/node",
       "memory": 1024,
       "maxDuration": 30
     }
@@ -11,13 +11,6 @@
     {
       "src": "/api/(.*)",
       "dest": "/api/$1"
-    },
-    {
-      "src": "/(.*)",
-      "dest": "/api/$1"
     }
-  ],
-  "buildCommand": "",
-  "outputDirectory": "./",
-  "installCommand": "npm install"
+  ]
 }
