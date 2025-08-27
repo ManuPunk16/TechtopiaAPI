@@ -20,6 +20,7 @@
     "audit:fix": "npm audit fix"
   },
   "dependencies": {
+    "@vercel/node": "^3.0.1",
     "compression": "^1.8.1",
     "cors": "^2.8.5",
     "dotenv": "^17.2.1",
